@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pokemon-container" id="player-pokemon">
+            <div class="pokemon-info">
+                <h2 id="player-name"></h2>
+                <div class="health-bar">
+                    <div class="health-bar-fill" id="player-health-bar"></div>
+                    <span id="player-health-text"></span>
+                </div>
+                <p id="player-level"></p>
+                <p id="player-type"></p>
+            </div>
+            <img id="player-sprite" src="https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif" alt="Sprite du joueur Pokémon">
+        </div>
+
+        <div class="pokemon-container" id="enemy-pokemon">
+            <div class="pokemon-info">
+                <h2 id="enemy-name"></h2>
+                <div class="health-bar">
+                    <div class="health-bar-fill" id="enemy-health-bar"></div>
+                    <span id="enemy-health-text"></span>
+                </div>
+                <p id="enemy-level"></p>
+                <p id="enemy-type"></p>
+            </div>
+            <img id="enemy-sprite" src="https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif" alt="Sprite du Pokémon ennemi">
+        </div>
+
+        <div class="battle-log" id="battle-log">
+            <!-- Les messages de combat apparaîtront ici -->
+        </div>
+
+        <div class="action-buttons" id="player-actions">
+            <!-- Boutons d'action du joueur -->
+        </div>
+
+        <div class="pokemon-selection" id="pokemon-selection">
+            <!-- Sélection de Pokémon pour le joueur -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

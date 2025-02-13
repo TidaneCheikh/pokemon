@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pokemon-info {
+    margin-right: 20px;
+}
+
+.health-bar {
+    width: 200px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.health-bar-fill {
+    height: 100%;
+    background-color: green;
+    border-radius: 5px;
+    width: 100%; /* Sera mis à jour par JavaScript */
+}
+
+.health-bar-text {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+}
+
+.battle-log {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 100px;
+    overflow-y: auto;
+}
+
+.action-buttons button, .pokemon-selection button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pokemon-selection {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
